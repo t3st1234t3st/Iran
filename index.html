@@ -12,13 +12,14 @@
     }
 
     body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(rgba(15,23,42,0.55), rgba(15,23,42,0.55)),
-                  url('shir-khorshid-flag.png') no-repeat center center fixed;
-      background-size: cover;
-      color: #e5e7eb;
-    }
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:
+    linear-gradient(rgba(15,23,42,0.55), rgba(15,23,42,0.55)),
+    url('shir-khorshid-flag.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #e5e7eb;
+}
 
     
     header {
@@ -114,6 +115,11 @@
 
     @media (max-width: 768px) {
 
+      body {
+      background-size: 50%;         
+           background-position: center top;
+      }
+
       header {
         font-size: 1.1rem;
         padding: 15px;
@@ -162,6 +168,25 @@
         font-size: 0.95rem;
       }
     }
+
+
+.tap-link {
+  display: inline-block;
+  padding: 10px 14px;
+  margin: 6px 0;
+  background: rgba(56, 189, 248, 0.12);
+  border-radius: 999px; /* pill shape */
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 500;
+  max-width: 100%;
+}
+
+.tap-link:active {
+  background: rgba(56, 189, 248, 0.25);
+  transform: scale(0.97);
+}
+
   </style>
 </head>
 
@@ -178,7 +203,7 @@
     <div class="text">
       <h2>What is happening right now in Iran?</h2>
       <p>
-        The people of Iran are protesting their government. The current government does not represent the will of the people. In response to these protests the government has responded with lethal violence. The government has responded by shutting off the internet and spreading misinformation. This has led to escalation including the indiscriminate killing of 12000 innocent civilians. We would like to spread awareness of these actions and you can help by spreading our message and using the #hashtag.
+        The people or Iran are protesting their government. The current government does not represent the will of the people. In response to these protests the government has responded with lethal violence. The government has responded by shutting off the internet and spreading misinformation. This has led to escalation including the indiscriminate killing of 12000 innocent civilians. We would like to spread awareness of these actions and you can help by spreading our message and using the #hastag.
       </p>
     </div>
 
@@ -200,26 +225,47 @@
     </div>
   </div>
 
-  <div class="card">
-    <h2>Contact Your Representatives</h2>
-    <p>Let them know you stand with human rights and peaceful civilians.</p>
+<div class="card">
+  <h2>Contact Your Representatives</h2>
+  <p>Let them know you stand with human rights and peaceful civilians.</p>
 
-    <h3>North Dakota</h3>
-    <ul>
-      <li>Senator: Kevin Cramer</li>
-      <li>Representative: Julie Fedorchak</li>
-    </ul>
+  <p style="font-size:0.9rem; color:#cbd5f5;">
+    Tap a name to open the official contact page
+  </p>
 
-    <h3>Minnesota</h3>
-    <ul>
-      <li>Senator: Amy Klobuchar</li>
-      <li>Representative: Michelle Fischbach</li>
-    </ul>
+  <h3>North Dakota</h3>
+  <ul style="list-style:none; padding-left:0;">
+    <li>
+      <a class="tap-link" href="https://www.cramer.senate.gov/contact/contact-kevin" target="_blank">
+        Senator: Kevin Cramer ✉️ 👆
+      </a>
+    </li>
+    <li>
+      <a class="tap-link" href="https://fedorchakforms.house.gov/contact/" target="_blank">
+        Representative: Julie Fedorchak ✉️ 👆
+      </a>
+    </li>
+  </ul>
 
-    <p style="font-size:0.85rem; color:#94a3b8;">
-      All representatives listed above use official contact forms on their websites. A short message of concern and solidarity makes a difference.
-    </p>
-  </div>
+  <h3>Minnesota</h3>
+  <ul style="list-style:none; padding-left:0;">
+    <li>
+      <a class="tap-link" href="https://www.klobuchar.senate.gov/public/index.cfm/email-amy" target="_blank">
+        Senator: Amy Klobuchar ✉️ 👆
+      </a>
+    </li>
+    <li>
+      <a class="tap-link" href="https://fischbach.house.gov/contact?utm_source=chatgpt.com" target="_blank">
+        Representative: Michelle Fischbach ✉️ 👆
+      </a>
+    </li>
+  </ul>
+
+  <p style="font-size:0.85rem; color:#94a3b8;">
+    All representatives listed above use official contact forms on their websites.
+    A short message of concern and solidarity makes a difference.
+  </p>
+</div>
 
 </div>
 
